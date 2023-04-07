@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: PODBot - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\WINDOWS\TEMP\RSPD2F5.TMP" mit Inhalten
+[
+/nologo /G5 /MT /W3 /GX /Zi /O2 /I "..\dlls" /I "..\engine" /I "..\common" /I "..\pm_shared" /I "..\\" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "VALVE_DLL" /Fp".\Release/PODBot.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot_chat.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot_client.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot_combat.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot_globals.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\bot_sounds.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\compress.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\dll.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\engine.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\h_export.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\linkfunc.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\log.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\util.cpp"
+"E:\Coding\Microsoft Visual Studio\Projects\Podbotold\DLLS\waypoint.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD2F5.TMP" 
+Erstellen der temporären Datei  "C:\WINDOWS\TEMP\RSPD2F6.TMP" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /dll /incremental:no /pdb:".\Release/PODBot.pdb" /map:".\Release/PODBot.map" /debug /machine:I386 /def:".\PODBot.def" /out:".\Release/PODBot.dll" /implib:".\Release/PODBot.lib" 
+".\Release\bot.obj"
+".\Release\bot_chat.obj"
+".\Release\bot_client.obj"
+".\Release\bot_combat.obj"
+".\Release\bot_globals.obj"
+".\Release\bot_sounds.obj"
+".\Release\compress.obj"
+".\Release\dll.obj"
+".\Release\engine.obj"
+".\Release\h_export.obj"
+".\Release\linkfunc.obj"
+".\Release\log.obj"
+".\Release\util.obj"
+".\Release\waypoint.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\WINDOWS\TEMP\RSPD2F6.TMP"
+Erstellen der temporären Datei  "C:\WINDOWS\TEMP\RSPD2F7.BAT" mit Inhalten
+[
+@echo off
+copy .\Release\PODBot.dll d:\csretail\cstrike\PODBot\podbot.dll
+]
+Erstellen der Befehlzeile "C:\WINDOWS\TEMP\RSPD2F7.BAT"
+Kompilierung läuft...
+bot.cpp
+bot_chat.cpp
+bot_client.cpp
+bot_combat.cpp
+bot_globals.cpp
+bot_sounds.cpp
+compress.cpp
+dll.cpp
+engine.cpp
+h_export.cpp
+linkfunc.cpp
+log.cpp
+util.cpp
+waypoint.cpp
+Linker-Vorgang läuft...
+   Bibliothek .\Release/PODBot.lib und Objekt .\Release/PODBot.exp wird erstellt
+<h3>Ausgabefenster</h3>
+Copying to DLL folder(s)
+        1 Datei(en) kopiert
+
+
+
+<h3>Ergebnisse</h3>
+PODBot.dll - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

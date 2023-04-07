@@ -1,0 +1,249 @@
+V1.0 First Public Release 27/10/2000
+
+
+V1.1
+
++ Fixed Player Speeds with Weapons
++ Fixed VIP Speed
++ Changed Damage Detection Code
++ Fixed Weapon Kickback
++ Extended Waypoint Menu System
++ Implemented hearing Footsteps
++ Modified Sniper Combat behaviour 
++ More weapon fixes
++ Bots above skill 70 sneak when Enemy near suspected
+
+
+V1.2
+
++ Fully compatible to CS 1.0
++ Recoded all Reaction Routines
++ Burst Fire implemented
++ Smarter Grenade Use/Throwing
++ Bots try to hide
+
+
+V1.4
+
++ FIXED: Bunny Hopping of Snipers
++ FIXED: Crash when adding Bots
++ FIXED: BotChat Freeze on Win2K (Couldn't test this!)
++ FIXED: Humanlike Combat Turning Speed
++ FIXED: Several Bugs in Waypoint Editor
++ FIXED: Living Bots talking to the Dead
++ FIXED: Only Host can issue commands
++ FIXED: Freezetime (first Round) Bug
++ FIXED: Knife being used when Enemy out of range
++ FIXED: Bot Chat Spamming
++ FIXED: Bug in detecting Hostages
++ Rewrote/optimized the Hearing Code
++ Bots now hear Shots and Button Usage within their range
++ Bots randomly use secondary knife mode
++ Changed Waypoint Movement
++ Changes in Basic Movement
++ Changed Waypoint Format
++ Added some stuff to the waypoint editor
++ Added Camp Flags to the Editor
++ Bots above Skill 60 try to stay more covered when moving
++ Improved Ladder climbing up
++ Added Bot User Menu
++ Tweaked Reaction Time again
++ Improved Enemy Detection Handling
++ Bots use Zoom Mode when sniping most of the time
++ Bots Hiding Behaviour improved
++ Added a bunch of new commands to the Config File
++ Added Randomness to Reaction Times
++ Bots are able to swim now
++ Updated/Replaced all Waypoint Files
+
+
+V1.4c
+
++ FIXED: Bots don't going mad anymore when flashbanged
++ FIXED: Hearing Bug when hiding
++ FIXED: Fixed some Issues with Weapon Kickback
++ FIXED: Bots keep ducking when seeing an enemy 
++ Added Minimum Turn Amount
++ Added Noclip Option for Waypoint Editing
++ Added Terrorist Bots use Hostages under certain conditions
++ Implemented Proper Sniper Zooming
++ Increased number of "special" waypoints from 32 to 64
++ Added some more dedicated Server Commands
++ Added option to turn on old (1.2) combat behaviour
++ Added botskill.cfg to tweak all skills to your needs
+
+
+V1.4x
+
++ FIXED: Dedicated Server commands not working after "newmap"
++ FIXED: Bots not shooting when enemy elevation </> than 45 degree
++ FIXED: Bots responding too fast to Radio Commands
++ Added fillserver command to DS commands
++ Recoded the Radio Capturing/Usage (faster & more reliable)
++ Bots react on many radio commands 
++ Added much better Player Avoidance Code
++ Bots don't pause until they've seen an enemy
++ Updated FAQ & Readme (make sure to read them!)
++ Added the previously missing de_foption wpt file
++ Added some more localized Botchat translations
++ New podbot.cfg command "botsfollowuser"
+
+
+V2.0
+
++ FIXED: Bots trying to pickup things already picked up before
++ FIXED: Ignoring of the MAXFOLLOW Variable
++ FIXED: Radio Commands not working in dedicated Server Mode
++ FIXED: Crash when deleting Waypoint Nr. 0
++ FIXED: Waypoints & Path Connections not displayed after
+         Map Change
++ FIXED: Dedicated Server Commands not working after Mapchange
++ FIXED: Previously broken Covered Movement
++ FIXED: Previously broken hearing of Shoot & Usage Noises
++ FIXED: Freezetime 100% working
++ FIXED: Correct Movement Speeds also in zoomed Mode
++ FIXED: Weapon Buying in AS Maps
++ FIXED: Low/High Angles Aiming Bug
++ FIXED: Included up/down looking at campwaypoints, which was
+         present since V1.0 but overseen
++ FIXED: Better Detection of Killer Entity
++ FIXED: Diving Problems when swimming
++ FIXED: Stupid Angle Bug which messed up movement sometimes
++ FIXED: Bots try to avoid shooting TeamMates (doesn't apply for
+         bad Grenading)
++ FIXED: Bots can't be added if Waypoints not initialised
++ Redid all the find routines
++ Better Edge Avoidance
++ Added Bots picking up weapons on the ground (adjustable
+  through BotWeapons.cfg)
++ Buying can be customised & personalized in BotWeapons.cfg 
++ Added some Teamchat Messages (Bots using Hostages etc.)
++ Optimized Waypoint Selection Code (much faster!)
++ Made Waypoint Selection more Team and Map dependant
++ Bots use SmokeGrenades and are primitively affected
++ Redid the whole Movement Code. Bots are now able to move
+  backwards/sidewards while moving to a goal and still check
+  for obstacles in their way
++ Smarter Combat Strafing/Jumping
++ Bots now have a small Task-driven Memory
++ Bots buy all Items (except senseless Nightvision Goggles)
++ Better enemy detection (more CPU consuming)
++ Added 3 basic Bot Personalities with adjustable Weapon
+  Preferences     
++ Bots above Skill 80 try to shoot seen/heard Enemies through
++ Obstacles if possible and enabled in Config
++ Counter Bots share a global memory of visited Bombspots
++ Bots on same Team share Enemy Knowledge if they see each
+  other
++ Bots collect Map Experience about Danger Spots (can be
+  turned off)
++ Bots primitively use Buttons of all types (except cameras)
++ Changed Inner Workings of Decision Logic
++ Hearing Sensibility now affected by Movement Speed & own Noises
++ Bots shoot back (randomly) at teammates who tried shooting them 
++ Added some Performance Settings to podbot.cfg
++ Added some more useful console commands for configuring
+  and helping when waypointing/debugging 
++ Again better Player Avoidance & Unstuck Code
++ Using the original HL Engine Speech Synthesis to
+  speak to the Host
++ Added custom Compress/Decompress Routines for those otherwise
+  much too big Experience Files 
++ Better blinded (Flashbang) Bevahiour
++ Bots don't loose their leader when seeing Enemies 
++ Improved ladder climbing
++ Bots shoot at dying enemies (Time based on Agression) if they
+  don't have a new opponent
++ CT Bots communicate about visited Bombspots. Humans can use
++ "Sector clear" to tell them about a visited Bombspot too.
++ Bots pickup things like Bomb or Weapons while following User
++ Some improvements & fixes to the waypoint editor
++ Added Bot Model Selection
++ Added preemptive Firing (based on Agression & skill) to
+  Fleeing/Hunting States  
++ Bots can be allowed to vote against disruptive Players 
++ Bots can be ordered (by the host) to vote for a map
++ Bots Emotions/Desires are also affected by number
+  of teammates near and current weapon
++ Some additional Fun-Modes included
++ Bot Agressions are affected by Roundtime & Team Goals
++ Waypoint Type Selection now bound to Personality +
+  Agression/Fear + Team
++ Failed/Succesful Plans are remembered for each Team and
+  stored in the experience files (if not turned off by User)
++ Bots mostly try to get away from Grenades thrown at them
++ Bots spray Logos (can be customized & turned off)
++ Bots now use the correct PVS & PAS
+
+
+V2.5
+
++ FIXED: Ignoring of the BotSpray Variable
++ FIXED: Wrong Gravity after turning off Fun-Modes
++ FIXED: Having 2 skills when minbotskill = maxbotskill
++ FIXED: Getting the Enemy instantly when being shot
++ FIXED: Nasty Bug in the firing Routine which messed up 
+         Reaction Times & kept Bots from shooting sometimes
++ FIXED: Resetting time to reach when being stuck causing Bots
+         remaining stuck & doing unnecessary jumps
++ FIXED: CT Bomb Spot Selection when using Experience Files
++ FIXED: Bugs & Problems with linked Lists, causing Memory Leaks
+		 and random crashes
++ FIXED: Bots tracking Enemies through Obstacles when camping/hiding
++ FIXED: All Turns/Movements Frame Independant
++ FIXED: Bugs in weapon buying on AS Maps
++ FIXED: First Bot on dedicated Server not moving properly
++ FIXED: Team mismatch when collecting experience
++ FIXED: Para/SG550 buying Bug when weapon restriction on
++ FIXED: Not dropping primary weapon for new one on the ground in
+		 extreme situations    
++ Optimized Player Avoidance a bit
++ Major Rewrite of the debugging core
++ Complete rewritten Burst Firing, now includes non-automatic weapons
+  and distance to target
++ Extended Hearing code to include Sounds like Opening Doors, Ladders
+  and a lot more (thanks killaruna!)
++ Added some more dynamic Symbols to the Chatsystem and a 'Name Humanizer'
++ Extended Chatsystem to have Bots Reply to user customizeable
+  Keywords + Bots chat with each other when spectating
+  (heavily inspired by ParaBot from killaruna again!)
++ Smarter Grenade Usage. Bots try to surprise enemies and cancel
+  grenading if they think it won't succeed
++ Movement now pretty much point precise
++ Changed Bot DS CVAR and some other stuff to be more compatible to
+  Botmaster5000
++ Ladder climbing should now handle even difficult stuff
++ Added Bot Weapon Mode Menu
++ Removed Bugs in the Aiming Code
++ Added "waypoint teleport"
++ Redid Bot Task/Schedule System resulting in more careful Bots etc.
++ All Radios Commands from 1.4x work again like "GetInPosition..."
++ Bots defend the planted Bomb and the guy who's defusing
++ CT Bots "hear" the planted Bomb
++ Increased Shooting Precision when using zoomed Sniper Weapon
++ Each Team selects a Leader Bot which issues some basic Radio Orders
+
+
+V2.6
+
++ FIXED: DS SERVER CVAR
++ FIXED: Borg Mode and added extra Borg Cam
++ FIXED: Misc Bugs when attacking
++ FIXED: Bots switching to next Weapon when only Ammo in current Clip
++ FIXED: Duck/Jumping Bug
++ FIXED: About 3 MB of Memory/Resource Leaks :)
++ Rewrote func type handling, especially buttons 
++ Aiming now affected by Enemy Velocity & Bot Turns
++ Bots continue their Tasks if no direct Path to Enemy
++ CT Bots low on health (or 50% Probability) guard a dropped C4
++ Rewrote Startup Routines which previously caused the stupid jumping
++ Smarter Grenade Usage
++ Correct FOV for each Weapon & Sniping Mode
++ New Zoom Switching allows better sniping weapon usage
++ Changes in the Behaviour Code - Bots try to go for Cover faster
++ Misc changes to the statistics system - depending on Emotions
+  Bots may camp instead of moving to dangerous positions
++ Bots don't move in Intermission
++ Bots leave their camping/hiding position if they get hurt by
+  unusual damage like drowning or gas  
+   
